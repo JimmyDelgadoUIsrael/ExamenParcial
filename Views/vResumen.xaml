@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jdelgadoExamen.Views.vResumen"
+             Title="vResumen">
+    <VerticalStackLayout Padding="20" Spacing="20">
+        <Label 
+            Text="RESUMEN"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            TextColor="Red"
+            FontSize="25"/>
+
+        <Grid>
+            <!--Filas-->
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <!--Columnas-->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Label
+                Text="Nombre:"
+                Grid.Column="0"
+                Grid.Row="0"/>
+
+            <Label
+     x:Name="lblNombre"
+     Grid.Column="1"
+     Grid.Row="0"/>
+
+            <Label
+     Text="Apellido:"
+     Grid.Column="0"
+     Grid.Row="1"/>
+
+            <Label
+x:Name="lblApellido"
+Grid.Column="1"
+Grid.Row="1"/>
+
+            <Label
+     Text="VA:"
+     Grid.Column="0"
+     Grid.Row="2"/>
+
+            <Label
+x:Name="lblVA"
+Grid.Column="1"
+Grid.Row="2"/>
+
+            <Label
+     Text="Fecha:"
+     Grid.Column="0"
+     Grid.Row="3"/>
+
+            <Label
+x:Name="lblFecha"
+Grid.Column="1"
+Grid.Row="3"/>
+
+            <Label
+     Text="Ciudad:"
+     Grid.Column="0"
+     Grid.Row="4"/>
+
+            <Label
+x:Name="lblCiudad"
+Grid.Column="1"
+Grid.Row="4"/>
+
+            <Label
+     Text="Monto Inicial:"
+     Grid.Column="0"
+     Grid.Row="5"/>
+
+            <Label
+x:Name="lblMontoI"
+Grid.Column="1"
+Grid.Row="5"/>
+
+            <Label
+     Text="Cuota Mensual:"
+     Grid.Column="0"
+     Grid.Row="6"/>
+
+            <Label
+x:Name="lblCuotaM"
+Grid.Column="1"
+Grid.Row="6"/>
+
+            <Label
+     Text="Pago Total:"
+     Grid.Column="0"
+     Grid.Row="7"/>
+
+            <Label
+x:Name="lblPagoT"
+Grid.Column="1"
+Grid.Row="7"/>
+
+
+
+
+
+
+        </Grid>
+        <Label
+x:Name="lblInfo"/>
+        <Button
+     x:Name="btnCerrar"
+            Text="Cerrar sesión"
+            Clicked="btnCerrar_Clicked"/>
+
+    </VerticalStackLayout>
+</ContentPage>
